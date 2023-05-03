@@ -1,5 +1,7 @@
 {
-  "name": "ionic-app-base",
-  "integrations": {},
+  "name": "SouthHillsApp",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
