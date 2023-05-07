@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -19,13 +19,12 @@
 
 
   <!--This chip will say school is starting in and insert the number of days until school starts I haven't added in the datetime thing to get the days yet-->
-  <ion-header>
+  <ion-header class="center">
     <ion-chip>
       <ion-avatar>
         <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       </ion-avatar>
-      <ion-label>School starts in DAYS days!</ion-label>
-      <ion-icon name="close-circle"></ion-icon>
+      <ion-label>School starts in {{days}} days!</ion-label>
     </ion-chip>
   </ion-header>
   <br>
@@ -41,11 +40,13 @@
     atmosphere that will not only foster the highest standards of excellence in all students but also help
     those students to develop an awareness of social responsibility and ethical behavior.
   </h1>
-</ion-content>
 
+  <br>
+  <br>
+  <br>
 
-<!--This is a list for the programs will fix later-->
-  <ion-list lines="full" class="list">
+  <!--This is a list for the programs will fix later-->
+  <ion-list lines="full" class="list" class="center">
     <ion-title>Programs:</ion-title>
     <ion-item>
       <ion-label>Full Lines</ion-label>
