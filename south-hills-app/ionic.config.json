@@ -1,7 +1,12 @@
 {
   "name": "SouthHillsApp",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {
+      "assets": {
+        "include": "./src/assets"
+      }
+    }
   },
   "type": "angular"
 }
