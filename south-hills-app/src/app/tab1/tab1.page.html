@@ -1,9 +1,4 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -14,7 +9,7 @@
   </ion-header>
 
     <div>
-      <img class="img" src="https://www.southhills.edu/wp-content/uploads/2015/07/SouthHillsWebRetina.jpg"/>
+      <img class="chipImg" src="https://www.southhills.edu/wp-content/uploads/2015/07/SouthHillsWebRetina.jpg"/>
     </div>
 
 
@@ -26,25 +21,23 @@
       <ion-label>School starts in {{days}} days!</ion-label>
     </ion-chip>
   </ion-header>
-  <br>
 
-<ion-title class="title">About Us</ion-title>
+<ion-card class="aboutCard">
+  <ion-card-header>
+    <ion-card-title>About Us</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <h2>The mission of South Hills School of Business & Technology is to offer qualified individuals the means to start and the encouragement to continue the lifelong growth process through higher education. In addition, South Hills School of Business & Technology has the obligation to create an educational atmosphere that will not only foster the highest standards of excellence in all students but also help those students to develop an awareness of social responsibility and ethical behavior.</h2>
+  </ion-card-content>
+
+  <img src="https://www.southhills.edu/wp-content/uploads/admissions-tabber2-AdobeStock_100327864.jpg" />
+
+</ion-card>
+
 <ion-content>
-  <h2>
-    The mission of South Hills School of Business & Technology is to offer qualified individuals
-    the means to start and the encouragement to continue the lifelong growth process through higher education.
-  </h2>
-  <h2>
-    In addition, South Hills School of Business & Technology has the obligation to create an educational
-    atmosphere that will not only foster the highest standards of excellence in all students but also help
-    those students to develop an awareness of social responsibility and ethical behavior.
-  </h2>
 
-  <br>
-  <br>
-  <br>
-
-  <a href="https://www.southhills.edu/media/PDF/catalog/catalog_2022-23.pdf">See the full course catalog here!</a>
+  <h1><a href="https://www.southhills.edu/media/PDF/catalog/catalog_2022-23.pdf">See the full course catalog here!</a></h1>
 
   <!--This is a list/accordians for the programs will fix later-->
   <ion-accordion-group>
@@ -72,4 +65,6 @@
   </ion-accordion-group>
   
 </ion-content>
+
 </ion-content>
+
