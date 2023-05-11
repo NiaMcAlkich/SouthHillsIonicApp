@@ -20,28 +20,27 @@
     <ion-card-content class="center">
       <h1>Choose a campus to view our hours!</h1>
     </ion-card-content>
-  <ion-card-content class="center">
-    <ion-button id="stateCollege" fill="clear" (click)="stateCollegeClick()">State College</ion-button>
-    <ion-button id="Altoona" fill="clear" (click)="altoonaClick()">Altoona</ion-button>
-  </ion-card-content>
-  </ion-card>
-
-  <ion-card id="campusTourCard">
-    <ion-card-header>
-      <ion-card-title>View Hours Here...</ion-card-title>
-    </ion-card-header>
-  
     <ion-card-content class="center">
-      <h1>{{ campusTour }}</h1>
+      <ion-button id="stateCollege" fill="clear" (click)="stateCollegeClick()">State College</ion-button>
+      <ion-button id="Altoona" fill="clear" (click)="altoonaClick()">Altoona</ion-button>
     </ion-card-content>
   </ion-card>
 
-<ion-content class="textBooksLink">
-  <h1><a href="https://www.thestudentbookstore.com/adoption-search">Order Textbooks Here!</a></h1>
-</ion-content>
+  <ion-card id="campusTourCard" class="campusTourCard">
+    <ion-card-header>
+      <ion-card-title>{{ campus }}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="center">
+      <ion-list>
+        <ion-item *ngFor="let tourTime of campusTour">{{ tourTime }}</ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 
+  <ion-card class="textBooksLink">
+    <h1><a href="https://www.thestudentbookstore.com/adoption-search">Order Textbooks Here!</a></h1>
+  </ion-card>
 
-<h1>Career/Jobs stuff</h1>
-
-
+  <h1>Career/Jobs stuff</h1>
 </ion-content>

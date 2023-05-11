@@ -8,16 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class Tab4Page implements OnInit {
 
   constructor() { }
-  campusTour = ''
-  stateCollege = ["Monday 8:00am—5:00pm", "Tuesday 8:00am—5:00pm", "Wednesday 8:00am—7:00pm", "Thursday 8:00am—7:00pm", "Friday 8:00am—5:00pm"]
-  altoona = ["Monday 7:30am—7:00pm", "Tuesday 7:30am—5:00pm", "Wednesday 7:30am—5:00pm", "Thursday 7:30am—5:00pm", "Friday 7:30am—5:00pm"]
+  campusTour: string[] = []
+  campus = ''
+  
+  stateCollege = ["Monday 8:00am—5:00pm", 
+  "Tuesday 8:00am—5:00pm", 
+  "Wednesday 8:00am—7:00pm", 
+  "Thursday 8:00am—7:00pm", 
+  "Friday 8:00am—5:00pm"]
+  
+  altoona = ["Monday 7:30am—7:00pm", 
+  "Tuesday 7:30am—5:00pm", 
+  "Wednesday 7:30am—5:00pm", 
+  "Thursday 7:30am—5:00pm", 
+  "Friday 7:30am—5:00pm"]
 
   stateCollegeClick() {
-    this.campusTour = this.stateCollege.join(',');
+    this.campus = 'State College Campus'
+    this.campusTour = this.stateCollege
   }
 
   altoonaClick() {
-    this.campusTour = this.altoona.join(',');
+    this.campus = 'Altoona Campus'
+    this.campusTour = this.altoona
   }
 
   ngOnInit() {
