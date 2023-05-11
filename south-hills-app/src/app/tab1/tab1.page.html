@@ -39,30 +39,34 @@
 
   <h1><a href="https://www.southhills.edu/media/PDF/catalog/catalog_2022-23.pdf">See the full course catalog here!</a></h1>
 
-  <!--This is a list/accordians for the programs will fix later-->
-  <ion-accordion-group>
-    <ion-accordion value="Programs">
-      <ion-item slot="header" color="light">
-        <ion-label>Programs:</ion-label>
-      </ion-item>
-      <div>
-        <ion-accordion-group [multiple]="true" [value]="['first', 'third']">
-          <ion-accordion value="Specialized Associate Degree Programs">
-            <ion-item slot="header" color="light">
-              <ion-label>Specialized Associate Degree Programs</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">First Nested Content</div>
-          </ion-accordion>
-          <ion-accordion value="Diploma Options">
-            <ion-item slot="header" color="light">
-              <ion-label>Diploma Programs</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Second Nested Content</div>
-          </ion-accordion>
-        </ion-accordion-group>
-      </div>
-    </ion-accordion>
-  </ion-accordion-group>
+  <ion-content>
+    
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Programs</ion-label>
+        </ion-item>
+        <div slot="content">
+          <ion-accordion-group>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="light">
+                <ion-label>Specialized Associate Degree Programs</ion-label>
+              </ion-item>
+              <div slot="content">Second Content</div>
+            </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="light">
+                <ion-label>Diploma Programs</ion-label>
+              </ion-item>
+              <div slot="content">Third Content</div>
+            </ion-accordion>
+          </ion-accordion-group>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+    
+  </ion-content>
+  
   
 </ion-content>
 
