@@ -24,7 +24,7 @@ div {
     width: 35%;
 }
 
-.applyLink a {
+.applyLink {
     text-align: center;
     color: white;
     background-color: rgb(0, 140, 255);
@@ -33,4 +33,30 @@ div {
     border-radius: 4em;
     border: 2px solid rgb(0, 140, 255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+ion-item, ion-label, a {
+    text-align: center;
+    font-size: x-large;
+}
+
+ion-card-header {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
+
+ion-title {
+    color: black;
+}
+
+
+h2, li {
+    color: black;
+    justify-content: center;
+}
+
+.normalLinks {
+    text-decoration: underline;
+    font-size: medium;
 }
